@@ -1,0 +1,145 @@
+<div [ngClass]="[theme === 'light' ? 'main-container' : theme === 'dark' ?  'main-container-dark': '']">
+
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div class="left-arrow-mobile"><img [src]="arrowLeft" style="margin-top: -8px;" (click)="mobileBack()" alt="">
+        </div>
+        <ul class="mainNav" id="mainNav">
+            <li class="nav_item">
+                <ul class="inner_item">
+                    <li [ngClass]="[theme === 'light' ? 'energy' : theme === 'dark' ?  'energy-dark': '']">
+                        <h2>Energy Consumption</h2>
+                    </li>
+                    <li *ngIf="arrangementList.length > 1" class="right-border right"></li>
+                    <li *ngIf="arrangementList.length > 1">
+                        <div [ngClass]="[theme === 'light' ? 'meterCover' : theme === 'dark' ?  'meterCover-dark': '']">
+                            <div class="mainMeter meter-wise" [ngClass]="isMeterOrLineValue =='meter' ? 'active': '' "
+                                (click)="toggleMeterOrLine()">
+                                <div class="box"></div>
+                                <div>Meter Wise</div>
+                            </div>
+                            <div class=" mainMeter line-wise" [ngClass]="isMeterOrLineValue =='line' ? 'active': '' "
+                                (click)="toggleMeterOrLine()">
+                                <div class="box"></div>
+                                <div>Line Wise</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-border"></li>
+                    <li>
+                        <div class="eqButton" [ngClass]="[theme === 'dark' ? 'eqDark': '']">
+                            <div class="eqText">Eq.Vehicle</div>
+                            <div class="onOffDiv" style="cursor: not-allowed; pointer-events: none;"
+                                [ngClass]="eqVehicleValue ? 'active' : ' ' ">
+                                <input type="checkbox" class="onOffToggle" [(ngModel)]="eqVehicleValue"
+                                    (click)="toggleEqVehicle()">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-border"></li>
+                </ul>
+            </li>
+            <li class="extraList"></li>
+            <li>
+                <ul class="inner_item">
+                    <li class="mobileList">
+                        <div class="datetime-selection selection-mobileview">
+                            <select name="" #dateSelection (change)="calenderTypeSelector(dateSelection.value,'')">
+                                <option class="btn" value="daily">Daily</option>
+                                <option class="btn" value="monthly">Monthly</option>
+                                <option class="btn" value="yearly">Yearly</option>
+                                <option class="btn" value="details">Details</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="mainView">
+                        <div class="datetime-selection" [ngClass]="[theme === 'dark' ? 'dateTimeDark' : '']">
+                            <button type="button" class="btn dailyCls"
+                                [ngClass]="calenderType =='daily' ? 'active' : ''"
+                                (click)="calenderTypeSelector('daily','')">Daily</button>
+                            <button type="button" class="btn monthCls"
+                                [ngClass]="calenderType =='monthly' ? 'active' : ''"
+                                (click)="calenderTypeSelector('monthly','')">Monthly</button>
+                            <button type="button" class="btn" [ngClass]="calenderType ==='yearly' ? 'active' : ''"
+                                (click)="calenderTypeSelector('yearly','')">Yearly</button>
+                            <button type="button" class="btn" [ngClass]="calenderType ==='details' ? 'active' : ''"
+                                (click)="calenderTypeSelector('details','')">Details</button>
+                        </div>
+                    </li>
+                    <li class="right-border datetime_right"></li>
+                    <li>
+                        <!-- Daily Data  -->
+                        <div class="calender-div " *ngIf="calenderType =='daily'">
+                            <div class="cal_left" [ngClass]="[theme === 'dark' ?'cal_left_dark': '']">
+                                <img src="assets/images/left.png" (click)="calenderTypeSelector('daily', 'prev')"
+                                    alt="Previous" class="arrow-img">
+                            </div>
+                            <div class="calender-inpt" [ngClass]="[theme === 'dark' ? 'calender_dark': '']">
+                                <input matInput [matDatepicker]="picker" [formControl]="dailyDateForm" [max]='maxDate'
+                                    (dateChange)="datePicker($event.target.value)">
+                                <mat-datepicker #picker></mat-datepicker>
+                                <img [src]="calenderIcon" (click)="picker.open()" alt="calender">
+                            </div>
+                            <div class="cal_left" [ngClass]="[theme === 'dark' ?'cal_left_dark': '']">
+                                <img class="arrow-img" src="assets/images/right.png"
+                                    (click)="calenderTypeSelector('daily', 'next')" alt="next"
+                                    [ngClass]="!showNextArrow ? 'active' : ' ' ">
+                            </div>
+                        </div>
+                        <!-- Monthly Data  -->
+                        <div class="calender-div" *ngIf="calenderType =='monthly'">
+                            <div class="cal_left" [ngClass]="[theme === 'dark' ?'cal_left_dark': '']">
+                                <img src="assets/images/left.png" (click)="calenderTypeSelector('monthly', 'prev')"
+                                    alt="Previous" class="arrow-img">
+                            </div>
+
+                            <div class="calender-inpt" [ngClass]="[theme === 'dark' ?'calender_dark': '']">
+                                <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="myDatePicker"
+                                    (dateChange)="datePicker($event.target.value)" [formControl]="monthlyDateForm">
+                                <mat-datepicker #myDatePicker startView="year" color="primary"></mat-datepicker>
+                                <img [src]="calenderIcon" (click)="myDatePicker.open()" alt="calender">
+                            </div>
+                            <div class="cal_left" [ngClass]="[theme === 'dark' ?'cal_left_dark': '']">
+                                <img class="arrow-img" src="assets/images/right.png" alt="next"
+                                    [ngClass]="!showNextArrow ? 'active' : ' ' "
+                                    (click)="calenderTypeSelector('monthly', 'next')">
+                            </div>
+                        </div>
+                        <!-- Yearly -->
+                        <div *ngIf="calenderType=='yearly'">
+                            <div class="calender-inpt">
+                                <select class="select_year"> (change)="onSelectYear($event.target['value'],'')">
+                                    <option *ngFor="let item of yearListArr; let i = index"
+                                        value="{{this.startingYear+i}}"
+                                        [selected]="yearListArr.length == i+1 ? 'true' : ''">{{item}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Details -->
+                        <div class="date-selector" *ngIf="calenderType=='details'"
+                            [ngClass]="calenderType=='details' ? 'active' : ''">
+                            <mat-date-range-input [rangePicker]="rangeepicker" [max]="maxDt" style="padding: 0px 8px;">
+                                <input class="matStartDate_c1" matStartDate placeholder="Start date" #dateRangeStart
+                                    [formControl]="rangeStartDateForm">
+                                <input matEndDate placeholder="End date" #dateRangeEnd [formControl]="rangeEndDateForm"
+                                    (dateChange)="dateRangeChange(dateRangeStart, dateRangeEnd)">
+                            </mat-date-range-input>
+                            <mat-date-range-picker #rangeepicker></mat-date-range-picker>
+                            <img class="data-details" [src]="calenderIcon" (click)="rangeepicker.open()" alt="calender"
+                                style="margin-right: 4px;">
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="mainNav2">
+            <li class="right-border"></li>
+            <li class="left-arrow-mobile"><img [src]="arrowRight" (click)="mobileNext()" alt=""></li>
+            <li>
+                <div class="menuButton" (click)="openNav()">
+                    <img [src]="menuIcon" alt="Menu">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="line"></div>
+</div>

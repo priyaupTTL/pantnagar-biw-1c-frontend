@@ -1,0 +1,99 @@
+<div class="main-section ">
+    <ul class="sub-section container-fluid">
+        <li [ngClass]="[theme === 'light' ? 'total-consume-light' : 'total-consume-dark']">
+            <div class="total-consumption" [ngClass]="blockSelected =='total' ? 'active' : ' ' "
+                (click)="selectBlock('total')">
+                <p class="Energy">Total</p>
+                <p class="total"> {{totalConsumptionValue || 0}} <span style="margin-left: 5px;">{{equipmentUnit}}
+                    </span></p>
+            </div>
+        </li>
+
+        <li class="tree-section" id="tree-section"
+            [ngClass]="[theme === 'light' ? 'tree-section' : 'tree-section-dark']">
+            <ul class="tree-section-ul">
+                <li class="left-arrow-mobile"><img [src]="arrowLeft" (click)="mobileSlideNext()" alt=""></li>
+                <li class="tree-meter-li" id="tree-meter-li">
+                    <ul class="inner-conatiner">
+                        <li class="outer-cover" *ngFor="let eq of areaList"
+                            [ngClass]="blockSelected == eq['equipmentId'] ? 'active' : ' ' "
+                            (click)="selectBlock(eq['equipmentId'])">
+                            <div class="sub-division"
+                                [ngClass]="[theme === 'light' ? 'sub-division-light' : 'sub-division-dark']">
+                                <div class="paint-process-div1">{{eq['equipmentName']}}</div>
+                                <div class="paint-process-div2 ">
+                                    <p class="Para1">{{ 0}} </p>
+                                    <p class="Para2">{{equipmentUnit}}</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-arrow-mobile"><img [src]="arrowRight" (click)="mobileSlideBack()" alt=""></li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+<div> <!--*ngIf="isMeterLineValue =='line' && contentVal =='compressed-air'"-->
+    <div *ngIf="selectedSubAreaList.length > 0" class="main-section-pted container-fluid">
+        <ul class="sub-section-pted"
+            [ngClass]="[theme === 'light' ? 'sub-section-pted' : 'inner-conatiner-htpcc-dark']">
+            <li class="sub-area-pted">
+                <p>Sub-Area</p>
+            </li>
+            <li class="tree-section-pted">
+                <ul class="inner-conatiner-pted">
+                    <li class="sub-area-img"><img [src]="arrowLeft" (click)="leftScroll()" alt=""></li>
+
+                    <li class="subAreaList">
+                        <ul class="subAreaMain" id="subAreaMain">
+                            <li  *ngFor="let eq of selectedSubAreaList">
+                                <div class="outer-pted " [ngClass]="subAreaSelected == eq.equipmentId ? 'active' : ' ' "
+                                    (click)='selectSubSection(eq.equipmentId)'>
+                                    <div class="pted"
+                                        [ngClass]="[theme === 'light' ? 'sub-division-light' : 'sub-division-dark']">
+                                        <div class="pted-div1">{{eq.equipmentName}}</div>
+                                        <div class="pted-div2 ">
+                                            <p class="Para1">{{0 || 0}}</p>
+                                            <p class="Para2">{{equipmentUnit}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="sub-area-img"><img [src]="arrowRight" (click)="rightScroll()" alt=""></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="user-action-area" [ngClass]="[theme === 'light' ? 'user-action-area' : 'user-action-area-light']">
+    <div class="user-action-more-button" *ngIf="showMoreText == 'Show Less'">
+        <button (click)="ShowAreaSubArea('Show More')">
+            <img [src]="downArrow" alt="Arrow">
+            Show Less
+        </button>
+    </div>
+    <div class="user-action-less-button" *ngIf="showMoreText == 'Show More'">
+        <button (click)="ShowAreaSubArea('Show Less')"> <img [src]="downArrow" alt="Arrow">
+            Show More
+        </button>
+    </div>
+    <div class="shift-descr">
+        <div class="btn-sec">
+            <div class="noti-box-2"></div>
+            <span>Shift A</span>
+        </div>
+        <div class="btn-sec">
+            <div class="noti-box-3"></div>
+            <span>Shift B</span>
+        </div>
+        <div class="btn-sec">
+            <div class="noti-box-4"></div>
+            <span>Shift C</span>
+        </div>
+    </div>
+</div>

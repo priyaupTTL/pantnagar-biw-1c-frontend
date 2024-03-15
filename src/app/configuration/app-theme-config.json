@@ -1,0 +1,79 @@
+{
+    "lightTheme": {
+        "sparqPlugLogo": "assets/images/theme/lightTheme_sparq_plug_logo.png",
+        "tataMotorsLogo": "assets/images/theme/lightTheme_tata_motors_logo.png",
+        "calenderIcon": "assets/images/theme/lightTheme_calender_icon.png",
+        "menuIcon": "assets/images/theme/lightTheme_menu_icon.png",
+        "rightIcon": "assets/images/theme/lightTheme_arrow_right_icon.png",
+        "leftIcon": "assets/images/theme/lightTheme_arrow_left_icon.png",
+        "downArrowIcon": "assets/images/theme/lightTheme_down_arrow_icon.png",
+        "percentageBarGraph": [
+            "#262d8c",
+            "#313ab4",
+            "#4b54ce",
+            "#6269d4",
+            "#878dde",
+            "#999ef1",
+            "#afb3e9",
+            "#c3c6ef",
+            "#4c52a5",
+            "#ebecfa"
+        ],
+        "lineGraph": [
+            "#5b5fc4",
+            "#c4b7e4",
+            "#9c9ef1"
+        ],
+        "barGraph": [
+            "#adafe1",
+            "#e1dbf1",
+            "#cdcef8"
+        ],
+        "paretoGraphColor": "#0271BB"
+    },
+    "darkTheme": {
+        "sparqPlugLogo": "assets/images/theme/darkTheme_sparq_plug_logo.png",
+        "tataMotorsLogo": "assets/images/theme/darkTheme_tata_motors_logo.png",
+        "calenderIcon": "assets/images/theme/darkTheme_calender_icon.png",
+        "menuIcon": "assets/images/theme/darkTheme_menu_icon.png",
+        "rightIcon": "assets/images/theme/darkTheme_arrow_right_icon.png",
+        "leftIcon": "assets/images/theme/darkTheme_arrow_left_icon.png",
+        "downArrowIcon": "assets/images/theme/darkTheme_down_arrow_icon.png",
+        "percentageBarGraph": [
+            "#2b556e",
+            "#326481",
+            "#478eb8",
+            "#5a9abf",
+            "#6ca5c6",
+            "#7eb0cd",
+            "#91bbd4",
+            "#b6d2e2",
+            "#c8ddea",
+            "#dae8f1",
+            "#5a9abf",
+            "#6ca5c6",
+            "#7eb0cd",
+            "#91bbd4",
+            "#b6d2e2",
+            "#c8ddea",
+            "#dae8f1",
+            "#7eb0cd",
+            "#91bbd4",
+            "#b6d2e2",
+            "#c8ddea",
+            "#dae8f1",
+            "#5a9abf"
+        ],
+        "lineGraph": [
+            "#397293",
+            "#60a4cb",
+            "#8dc3e2"
+        ],
+        "barGraph": [
+            "#397293",
+            "#60a4cb",
+            "#8dc3e2"
+        ],
+        "paretoGraphColor": "#2b556e"
+    }
+}

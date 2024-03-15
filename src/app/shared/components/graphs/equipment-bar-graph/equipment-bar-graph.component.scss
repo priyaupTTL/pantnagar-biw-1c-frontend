@@ -1,0 +1,102 @@
+$medium_font: montserrat-medium; 
+
+.backdrop {
+    margin-left: -1.5%;  
+    background-color: #000;
+  width: 200%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.9;
+  top: 0;
+}
+
+.fullscreen-content {
+  border-radius: 13px;
+  background-color: #fff;
+  z-index: 9999;
+  display: block;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  width: 80%;
+  height: 80%;
+  max-width: 100%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#fullscreenGraph {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 60%;
+  overflow: hidden;
+}
+
+.close-button {
+  font-family: $medium_font;
+  color: black;
+  z-index: 9999;
+  text-align: center;
+  padding: 5px;
+  right: 9px;
+  position: absolute;
+  top: -4px;
+  font-size: 25px;
+  cursor: pointer;
+  width: 29px;
+  border-radius: 50%;
+  height: 27px;
+  font-weight: 600;
+}
+
+.fullscreenGraph {
+  position: relative;
+}
+
+.box-head {
+  position: relative;
+}
+.box-head p {
+  text-align: center;
+  padding: 2px 9px 9px 9px;
+  color: black;
+  font-family: montserrat-semibold;
+  border-bottom: 1px solid #ccc;
+  font-size: large;
+}
+
+.box-body div {
+  text-align: center;
+  font-family: $medium_font;
+  font-size: 1vw;
+  margin-top: 5%;
+}
+
+.box-body,
+.js-plotly-plot {
+  width: 100%;
+  height: 100%;
+}
+
+div.view-box {
+  width: 100%;
+  margin-bottom: 1%;
+  border: 1px solid #bdb6e494;
+  box-shadow: -1px 0px 14px -4px #000;
+  border-radius: 10px;
+}
+
+div.fullscreen-content .view-box {
+  height: 100%;
+}
+
+.box-body div {
+  height: 100%;
+}

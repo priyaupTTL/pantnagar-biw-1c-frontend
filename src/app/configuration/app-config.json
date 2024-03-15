@@ -1,0 +1,7 @@
+{
+    "appName": "BIW-1B-dashboard",
+    "firstYear": 2024,
+    "firstMonth": 4,
+    "consumptionUnit": "kWh",
+    "downloadIconPath": "assets/images/download.png"
+}

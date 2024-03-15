@@ -1,0 +1,26 @@
+.container-main-div {
+    overflow: scroll !important;
+    height: 78vh;
+    // background-color: #ebedf3;
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #648395;
+        outline: 1px solid #648395;
+    }
+}
+.container-outer-div{
+ margin: 0.2rem 1rem;
+}
+.graph {
+    height: 268px;
+    // margin: 12px auto;
+    max-height: 100%;
+}
+.m-bottom-15 {
+    padding: 0px 4px 8px 4px;
+}
+
+

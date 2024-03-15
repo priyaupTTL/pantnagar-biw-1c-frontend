@@ -1,0 +1,14 @@
+<div *ngIf="showFullscreen" class="fullscreen-container">
+    <div class="backdrop"></div>
+    <div class="fullscreen-content">
+      <div class="view-box">
+        <div class="box-head">
+          <div class="close-button" (click)="showFullscreen = false">X</div>
+          <p id="title-fullscreen"></p>
+        </div>
+        <div class="box-body">
+          <div id="fullscreenGraph"></div>
+        </div>
+      </div>
+    </div>
+</div>

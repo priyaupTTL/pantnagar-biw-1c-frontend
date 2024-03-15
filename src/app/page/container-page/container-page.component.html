@@ -1,0 +1,6 @@
+<div *ngIf="selectedLevel === 'total' || selectedLevel === 'area'">
+<app-area-page [selectedLevel]="selectedLevel"></app-area-page>
+</div>
+<div *ngIf="selectedLevel === 'subArea'">
+<app-equipment-page></app-equipment-page>
+</div>

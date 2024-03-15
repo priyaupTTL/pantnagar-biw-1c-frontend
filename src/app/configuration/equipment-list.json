@@ -1,0 +1,578 @@
+{
+    "meterwise": {
+        "incoming-pp13.1": {
+            "equipmentName": "PP 13.1 - Substation",
+            "equipmentId": "incoming-pp13.1",
+            "subEquipments": [
+                {
+                    "equipmentName": "O/G to 25 Kvar Capacitor",
+                    "equipmentId": "pp-131-og-to-25-kvar-capacitor"
+                },
+                {
+                    "equipmentName": "O/G to 25 Kvar Capacitor",
+                    "equipmentId": "pp-131-og-to-25-kvar-capacitor"
+                },
+                {
+                    "equipmentName": "ASP-01",
+                    "equipmentId": "pp-131-asp-01"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1120  W/C1",
+                    "equipmentId": "pp-131-welding-controller-1120-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1140 W/C2",
+                    "equipmentId": "pp-131-welding-controller-1140-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1130 W/C2",
+                    "equipmentId": "pp-131-welding-controller-1130-w-c2"
+                },
+                {
+                    "equipmentName": "1120 SW",
+                    "equipmentId": "pp-131-1120-sw"
+                },
+                {
+                    "equipmentName": "Office Light",
+                    "equipmentId": "pp-131-office-light"
+                },
+                {
+                    "equipmentName": "Welding Controller, 200 W/C1",
+                    "equipmentId": "pp-131-welding-controller-200-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1115 W/C2",
+                    "equipmentId": "pp-131-welding-controller-1115-w-c2"
+                }
+            ]
+        },
+        "incoming-pp13.2": {
+            "equipmentName": "PP 13.2 - Substation",
+            "equipmentId": "incoming-pp13.2",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 170 W/C1",
+                    "equipmentId": "pp-132-welding-controller-170-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 170 W/C3",
+                    "equipmentId": "pp-132-welding-controller-170-w-c3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 150 W/C3",
+                    "equipmentId": "pp-132-welding-controller-150-w-c3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 150 W/C1",
+                    "equipmentId": "pp-132-welding-controller-150-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 160 W/C1",
+                    "equipmentId": "pp-132-welding-controller-160-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 180 W/C3",
+                    "equipmentId": "pp-132-welding-controller-180-w-c3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1110 W/C1",
+                    "equipmentId": "pp-132-welding-controller-1110-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1130 W/C1",
+                    "equipmentId": "pp-132-welding-controller-1130-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1115 W/C1",
+                    "equipmentId": "pp-132-welding-controller-1115-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 180 W/C1",
+                    "equipmentId": "pp-132-welding-controller-180-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1140 W/C1",
+                    "equipmentId": "pp-132-welding-controller-1140-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 190 W/C1",
+                    "equipmentId": "pp-132-welding-controller-190-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 190 W/C3",
+                    "equipmentId": "pp-132-welding-controller-190-w-c3"
+                }
+            ]
+        },
+        "incoming-pp13.3": {
+            "equipmentName": "PP 13.3 - Substation",
+            "equipmentId": "incoming-pp13.3",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 180 W/C2",
+                    "equipmentId": "pp13.3-welding-controller-180-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 180 W/C4",
+                    "equipmentId": "pp13.3-welding-controller-180-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 160 W/C2",
+                    "equipmentId": "pp13.3-welding-controller-160-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 150 W/C2",
+                    "equipmentId": "pp13.3-welding-controller-150-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 150 W/C4",
+                    "equipmentId": "pp13.3-welding-controller-150-w-c4"
+                },
+                {
+                    "equipmentName": "PLC-01",
+                    "equipmentId": "pp13.3-plc-01"
+                },
+                {
+                    "equipmentName": "Welding Controller, 190 W/C2",
+                    "equipmentId": "pp13.3-welding-controller-190-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 190 W/C4",
+                    "equipmentId": "pp13.3-welding-controller-190-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 170 W/C4",
+                    "equipmentId": "pp13.3-welding-controller-170-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 170 W/C2",
+                    "equipmentId": "pp13.3-welding-controller-170-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 200 W/C2",
+                    "equipmentId": "pp13.3-welding-controller-200-w-c2"
+                }
+            ]
+        },
+        "incoming-pp13.8": {
+            "equipmentName": "PP 13.8 - Substation",
+            "equipmentId": "incoming-pp13.8",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 320 W/C1",
+                    "equipmentId": "pp-138-welding-controller-320-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 330 W/C2 MFDC",
+                    "equipmentId": "pp-138-welding-controller-330-w-c2-mfdc"
+                },
+                {
+                    "equipmentName": "Welding Controller, 330 W/C1 MFDC",
+                    "equipmentId": "pp-138-welding-controller-330-w-c1-mfdc"
+                },
+                {
+                    "equipmentName": "Welding Controller, 340 W/C2 MFDC",
+                    "equipmentId": "pp-138-welding-controller-340-w-c2-mfdc"
+                },
+                {
+                    "equipmentName": "PDB-03 at C-15",
+                    "equipmentId": "pp-138-pdb-03-at-c-15"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 W/C1",
+                    "equipmentId": "pp-138-welding-controller-1330-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 W/C5",
+                    "equipmentId": "pp-138-welding-controller-1330-w-c5"
+                },
+                {
+                    "equipmentName": "Welding Controller, 340 W/C 2",
+                    "equipmentId": "pp-138-welding-controller-340-w-c-2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 320 W/C4",
+                    "equipmentId": "pp-138-welding-controller-320-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 330 W/C2",
+                    "equipmentId": "pp-138-welding-controller-330-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 RH W/C3",
+                    "equipmentId": "pp-138-welding-controller-1330-rh-w-c3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 320 W/C2",
+                    "equipmentId": "pp-138-welding-controller-320-w-c2"
+                }
+            ]
+        },
+        "incoming-pp13.9": {
+            "equipmentName": "PP 13.9 - Substation",
+            "equipmentId": "incoming-pp13.9",
+            "subEquipments": [
+                {
+                    "equipmentName": "PDB -02 at B-15 MRH",
+                    "equipmentId": "pp-139-pdb-02-at-b-15-mrh"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1310 RH W/C2",
+                    "equipmentId": "pp-139-welding-controller-1310-rh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1320 RH W/C2",
+                    "equipmentId": "pp-139-welding-controller-1320-rh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 RH W/C2",
+                    "equipmentId": "pp-139-welding-controller-1330-rh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 RH W/C4",
+                    "equipmentId": "pp-139-welding-controller-1330-rh-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1310 RH W/C1",
+                    "equipmentId": "pp-139-welding-controller-1310-rh-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1320 RH W/C1",
+                    "equipmentId": "pp-139-welding-controller-1320-rh-w-c1"
+                },
+                {
+                    "equipmentName": "Body Side Conveyor (LH & RH)",
+                    "equipmentId": "pp-139-body-side-conveyor-lh-rh"
+                }
+            ]
+        },
+        "incoming-pp13.10": {
+            "equipmentName": "PP 13.10 - Substation",
+            "equipmentId": "incoming-pp13.10",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 380 W/C4",
+                    "equipmentId": "pp-1310-welding-controller-380-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 370 W/C2",
+                    "equipmentId": "pp-1310-welding-controller-370-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 360 W/C4",
+                    "equipmentId": "pp-1310-welding-controller-360-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 370 W/C4",
+                    "equipmentId": "pp-1310-welding-controller-370-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 360 W/C2",
+                    "equipmentId": "pp-1310-welding-controller-360-w-c2"
+                },
+                {
+                    "equipmentName": "PLC-02",
+                    "equipmentId": "pp-1310-plc-02"
+                },
+                {
+                    "equipmentName": "Welding Controller, 400 W/C2",
+                    "equipmentId": "pp-1310-welding-controller-400-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 380 W/C2",
+                    "equipmentId": "pp-1310-welding-controller-380-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 400 W/C4",
+                    "equipmentId": "pp-1310-welding-controller-400-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 390 W/C2",
+                    "equipmentId": "pp-1310-welding-controller-390-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 410 W/C4",
+                    "equipmentId": "pp-1310-welding-controller-410-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 410 W/C2",
+                    "equipmentId": "pp-1310-welding-controller-410-w-c2"
+                }
+            ]
+        },
+        "incoming-pp13.11": {
+            "equipmentName": "PP 13.11 - Substation",
+            "equipmentId": "incoming-pp13.11",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 390 W/C 1",
+                    "equipmentId": "pp-1311-welding-controller-390-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 390 W/C 3",
+                    "equipmentId": "pp-1311-welding-controller-390-w-c-3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 390 W/C 4",
+                    "equipmentId": "pp-1311-welding-controller-390-w-c-4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 400 W/C 1",
+                    "equipmentId": "pp-1311-welding-controller-400-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 370 W/C 3",
+                    "equipmentId": "pp-1311-welding-controller-370-w-c-3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 370 W/C 5",
+                    "equipmentId": "pp-1311-welding-controller-370-w-c-5"
+                },
+                {
+                    "equipmentName": "Welding Controller, 410 W/C 3",
+                    "equipmentId": "pp-1311-welding-controller-410-w-c-3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 380 W/C 1",
+                    "equipmentId": "pp-1311-welding-controller-380-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 410 W/C 1",
+                    "equipmentId": "pp-1311-welding-controller-410-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 380 W/C 03",
+                    "equipmentId": "pp-1311-welding-controller-380-w-c-03"
+                },
+                {
+                    "equipmentName": "Welding Controller, 400 W/C 3",
+                    "equipmentId": "pp-1311-welding-controller-400-w-c-3"
+                }
+            ]
+        },
+        "incoming-pp13.12": {
+            "equipmentName": "PP 13.12 - Substation",
+            "equipmentId": "incoming-pp13.12",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 1330 LH W/C4",
+                    "equipmentId": "pp-1312-welding-controller-1330-lh-w-c4"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1310 LH W/C2",
+                    "equipmentId": "pp-1312-welding-controller-1310-lh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1230 LH W/C2",
+                    "equipmentId": "pp-1312-welding-controller-1230-lh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1210 LH W/C2",
+                    "equipmentId": "pp-1312-welding-controller-1210-lh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1220 LH W/C2",
+                    "equipmentId": "pp-1312-welding-controller-1220-lh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 LH W/C5",
+                    "equipmentId": "pp-1312-welding-controller-1330-lh-w-c5"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1320 LH W/C1",
+                    "equipmentId": "pp-1312-welding-controller-1320-lh-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1320 LH W/C2",
+                    "equipmentId": "pp-1312-welding-controller-1320-lh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1310 LH W/C1",
+                    "equipmentId": "pp-1312-welding-controller-1310-lh-w-c1"
+                }
+            ]
+        },
+        "incoming-pp13.13": {
+            "equipmentName": "PP 13.13 - Substation",
+            "equipmentId": "incoming-pp13.13",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 1330 LH W/C2",
+                    "equipmentId": "pp-1313-welding-controller-1330-lh-w-c2"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 LH W/C1",
+                    "equipmentId": "pp-1313-welding-controller-1330-lh-w-c1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 330 W/C 1",
+                    "equipmentId": "pp-1313-welding-controller-330-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 1330 LH W/C3",
+                    "equipmentId": "pp-1313-welding-controller-1330-lh-w-c3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 340 W/C 1",
+                    "equipmentId": "pp-1313-welding-controller-340-w-c-1"
+                },
+                {
+                    "equipmentName": "410 -EX",
+                    "equipmentId": "pp-1313-410-ex"
+                },
+                {
+                    "equipmentName": "Welding Controller, 340 W/C 1 MFDC",
+                    "equipmentId": "pp-1313-welding-controller-340-w-c-1-mfdc"
+                },
+                {
+                    "equipmentName": "Welding Controller, 320 W/C 3",
+                    "equipmentId": "pp-1313-welding-controller-320-w-c-3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 360 W/C 1",
+                    "equipmentId": "pp-1313-welding-controller-360-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller, 360 W/C 3",
+                    "equipmentId": "pp-1313-welding-controller-360-w-c-3"
+                },
+                {
+                    "equipmentName": "Welding Controller, 360 W/C 5",
+                    "equipmentId": "pp-1313-welding-controller-360-w-c-5"
+                },
+                {
+                    "equipmentName": "Welding Controller, 370 W/C 1",
+                    "equipmentId": "pp-1313-welding-controller-370-w-c-1"
+                }
+            ]
+        },
+        "incoming-pp13.22": {
+            "equipmentName": "PP 13.22 - Substation",
+            "equipmentId": "incoming-pp13.22",
+            "subEquipments": [
+                {
+                    "equipmentName": "Welding Controller, 1852 W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1852-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1930 RH W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1930-rh-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1830 LH W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1830-lh-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1730 LH W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1730-lh-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1730 RH W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1730-rh-w-c-1"
+                },
+                {
+                    "equipmentName": "ASP NO.-02 at D-9",
+                    "equipmentId": "pp-1322-asp-no02-at-d-9"
+                },
+                {
+                    "equipmentName": "PDB-4",
+                    "equipmentId": "pp-1322-pdb-4"
+                },
+                {
+                    "equipmentName": "Finishing Line Main PP",
+                    "equipmentId": "pp-1322-finishing-line-main-pp"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1853 W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1853-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1854 W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1854-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1851 W/C 1",
+                    "equipmentId": "pp-1322-welding-controller-1851-w-c-1"
+                },
+                {
+                    "equipmentName": "Welding Controller,  1930 RH W/C 2",
+                    "equipmentId": "pp-1322-welding-controller-1930-rh-w-c-2"
+                },
+                {
+                    "equipmentName": "1720-EX-LH",
+                    "equipmentId": "pp-1322-1720-ex-lh"
+                }
+            ]
+        },
+        "incoming-pp13.23": {
+            "equipmentName": "PP 13.23 - Substation",
+            "equipmentId": "incoming-pp13.23",
+            "subEquipments": [
+                {
+                    "equipmentName": "Bus Bar no-2",
+                    "equipmentId": "pp-1323-bus-bar-no-2"
+                },
+                {
+                    "equipmentName": "Bus Bar no-1",
+                    "equipmentId": "pp-1323-bus-bar-no-1"
+                },
+                {
+                    "equipmentName": "bus bar-3",
+                    "equipmentId": "pp-1323-bus-bar-3"
+                },
+                {
+                    "equipmentName": "MCC PANEL NO.2 (COLUMN 11-12)",
+                    "equipmentId": "pp-1323-mcc-panel-no2-column-11-12"
+                }
+            ]
+        },
+        "incoming-pp13.24": {
+            "equipmentName": "PP 13.24 - Substation",
+            "equipmentId": "incoming-pp13.24",
+            "subEquipments": [
+                {
+                    "equipmentName": "ASP PANEL 2 VFD",
+                    "equipmentId": "pp-1324-asp-panel-2-vfd"
+                },
+                {
+                    "equipmentName": "Bus bar no-4 at C-22",
+                    "equipmentId": "pp-1324-bus-bar-no-4-at-c-22"
+                },
+                {
+                    "equipmentName": "Bus bar no-5 at C-22",
+                    "equipmentId": "pp-1324-bus-bar-no-5-at-c-22"
+                }
+            ]
+        },
+        "incoming-pp13.25": {
+            "equipmentName": "PP 13.25 - Substation",
+            "equipmentId": "incoming-pp13.25",
+            "subEquipments": [
+                {
+                    "equipmentName": "MCC PANEL COOLING TOWER",
+                    "equipmentId": "pp-1325-mcc-panel-cooling-tower"
+                },
+                {
+                    "equipmentName": "MLDB-1 at A-17",
+                    "equipmentId": "pp-1325-mldb-1-at-a-17"
+                },
+                {
+                    "equipmentName": "S/S LDB",
+                    "equipmentId": "pp-1325-s-s-ldb"
+                },
+                {
+                    "equipmentName": "MLDB-3 at C-13",
+                    "equipmentId": "pp-1325-mldb-3-at-c-13"
+                },
+                {
+                    "equipmentName": "MLDB-2 at B-18",
+                    "equipmentId": "pp-1325-mldb-2-at-b-18"
+                },
+                {
+                    "equipmentName": "MLDB-4 at D-18",
+                    "equipmentId": "pp-1325-mldb-4-at-d-18"
+                }
+            ]
+        }
+    }
+}

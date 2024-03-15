@@ -1,0 +1,255 @@
+<div class="container-main-div">
+    <div class="container-outer-div">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 m-bottom-15">
+                <div class="view-box">
+                    <div class="box-head">
+                        <p>Percentage Energy Consumption</p>
+                    </div>
+                    <div class="box-body">
+                        <div class="PTEDGraph" id="percentage-graph-element">
+                            <app-percentage-graph [StackData]="percentageGraphData" [colorcode]="colorCodeLineGraph"
+                                *ngIf="calenderType == 'daily'" showBarGraph="false" [unit]="consumptionUnit"
+                                elementId="percentage-graph-element" filterType="daily"
+                                graphTitle="Percentage Energy Consumption"></app-percentage-graph>
+                            <app-percentage-graph [StackData]="percentageGraphData" [colorcode]="colorCodeBarGraph"
+                                *ngIf="calenderType == 'monthly' || calenderType == 'details'  || calenderType == 'yearly'"
+                                [unit]="consumptionUnit" elementId="percentage-graph-element"
+                                [filterType]="calenderType" graphTitle="Percentage Energy Consumption">
+                            </app-percentage-graph>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <button [ngClass]="[percentageGraphData.length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                            <!-- (click)="downloadPercentageDistributionGraph(percentageGraphData,calenderType,'Percentage Energy Consumption','Percentage')"> -->
+                            <img src="assets/images/download.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 m-bottom-15">
+                <div class="view-box">
+                    <div class="box-head">
+                        <p>Distributed Energy Consumption</p>
+                    </div>
+                    <div class="box-body">
+                        <div class="graph" id="pareto-graph-element">
+                            <app-pareto-graph [StackData]="paretoGraphData" [colorcode]="colorCodeLineGraph"
+                                *ngIf="calenderType == 'daily'" showBarGraph="false" [unit]="consumptionUnit"
+                                elementId="pareto-graph-element" graphTitle="Distributed Energy Consumption">
+                            </app-pareto-graph>
+                            <app-pareto-graph [StackData]="paretoGraphData" [colorcode]="colorCodeBarGraph"
+                                *ngIf="calenderType == 'monthly' || calenderType == 'details'  || calenderType == 'yearly'"
+                                [unit]="consumptionUnit" elementId="pareto-graph-element"
+                                graphTitle="Distributed Energy Consumption"></app-pareto-graph>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <button [ngClass]="[paretoGraphData.length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                            <!-- (click)="downloadPercentageDistributionGraph(paretoGraphData,calenderType,'Distribution of Energy Consumption','Distribution')"> -->
+                            <img src="assets/images/download.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-bottom-15">
+                <div class="view-box">
+                    <div class="box-head">
+                        <p>Energy Consumption</p>
+                    </div>
+                    <div class="box-body">
+                        <div id="energy-bar-graph-element">
+                            <app-stack-bar-graph *ngIf="finalStackGraphData.length > 0"
+                                [StackData]="finalStackGraphData" [unit]="consumptionUnit" [filterType]="calenderType"
+                                elementId="energy-bar-graph-element" [area]="'linewise'"
+                                graphTitle="Energy Consumption"></app-stack-bar-graph>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <button [ngClass]="[finalStackGraphData.length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                            <!-- (click)="downloadPercentageDistributionGraph(AllGraph_Stackdata,filterType,'Energy Consumption','EnergyTotal')"> -->
+                            <img src="assets/images/download.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="selectedLevel === 'total'">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 m-bottom-15">
+                <div class="view-box">
+                    <div class="box-head">
+                        <p>Total Energy Consumption</p>
+                    </div>
+                    <div class="box-body">
+                        <div id="total-energy-graph-element">
+                            <app-equipment-line-graph [StackData]="individualGraphData['ht-pcc1-substation-1']"
+                                [colorcode]="colorCodeLineGraph" *ngIf="calenderType == 'daily'" showBarGraph="false"
+                                [unit]="consumptionUnit" elementId="total-energy-graph-element" filterType="daily"
+                                graphTitle="Total Energy Consumption"></app-equipment-line-graph>
+                            <app-equipment-bar-graph [StackData]="individualGraphData['ht-pcc1-substation-1']"
+                                [colorcode]="colorCodeBarGraph"
+                                *ngIf="calenderType == 'monthly' || calenderType == 'details'  || calenderType == 'yearly'"
+                                [unit]="consumptionUnit" elementId="total-energy-graph-element"
+                                [filterType]="calenderType" graphTitle="Total Energy Consumption">
+                            </app-equipment-bar-graph>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <button
+                            [ngClass]="[individualGraphData['ht-pcc1-substation-1'].length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                            <!-- (click)="downloadFile(Total_Energy_Meter,filterType,TOTAL_UCL,mainAreaName,'')"> -->
+                            <img src="assets/images/download.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 m-bottom-15">
+                <div class="view-box">
+                    <div class="box-head">
+                        <p>Total Energy Consumption</p>
+                        <div class="total-box">
+                            <p>Total : {{individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['total']}}
+                                {{consumptionUnit}}</p>
+                        </div>
+                        <span class="tooltiptext">Total Energy Consumption</span>
+                    </div>
+                    <div class="box-body">
+                        <div class="piechart-container" id="Total_Energy_Consumption_PieGraph_Id">
+                            <app-horizontal-stack-bar-graph
+                                [StackData]="individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData']"
+                                showBarGraph="false" [unit]="consumptionUnit" [colorcode]="colorCodeBarGraph"
+                                elementId="Total_Energy_Consumption_PieGraph_Id" [filterType]="calenderType"
+                                graphTitle="Total Energy Consumption"></app-horizontal-stack-bar-graph>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <button
+                            [ngClass]="[individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData'].length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                            <!-- (click)="downloadFilePie(individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData'],filterType,mainAreaName,'')"> -->
+                            <img src="assets/images/download.png" alt="Download">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="selectedLevel === 'total'">
+            <div  *ngFor="let subArea of selectedSubAreaList; let i = index">
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 m-bottom-15">
+                    <div class="view-box">
+                        <div class="box-head">
+                            <p>{{subArea['equipmentName']}}</p>
+                        </div>
+                        <div class="box-body">
+                            <div *ngIf="individualGraphData['ht-pcc1-substation-1'].length > 0" id="{{'sub-area-graph-element' + i}}">
+                                <app-equipment-line-graph [StackData]="individualGraphData['ht-pcc1-substation-1']"
+                                    [colorcode]="colorCodeLineGraph" *ngIf="calenderType == 'daily'" showBarGraph="false"
+                                    [unit]="consumptionUnit" elementId="{{'sub-area-graph-element' + i}}" filterType="daily"
+                                    [graphTitle]="subArea['equipmentName']"></app-equipment-line-graph>
+                                <app-equipment-bar-graph [StackData]="individualGraphData['ht-pcc1-substation-1']"
+                                    [colorcode]="colorCodeBarGraph"
+                                    *ngIf="calenderType == 'monthly' || calenderType == 'details'  || calenderType == 'yearly'"
+                                    [unit]="consumptionUnit" elementId="{{'sub-area-graph-element' + i}}"
+                                    [filterType]="calenderType" [graphTitle]="subArea['equipmentName']">
+                                </app-equipment-bar-graph>
+                            </div>
+                        </div>
+                        <div class="download">
+                            <button
+                                [ngClass]="[individualGraphData['ht-pcc1-substation-1'].length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                                <img src="assets/images/download.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 m-bottom-15">
+                    <div class="view-box">
+                        <div class="box-head">
+                            <p>{{subArea['equipmentName']}}</p>
+                            <div class="total-box">
+                                <p>Total : {{individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['total']}}
+                                    {{consumptionUnit}}</p>
+                            </div>
+                            <span class="tooltiptext">{{subArea['equipmentName']}}</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="piechart-container" id="{{'sub-area-hori-graph-element' + i}}">
+                                <app-horizontal-stack-bar-graph
+                                    [StackData]="individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData']"
+                                    showBarGraph="false" [unit]="consumptionUnit" [colorcode]="colorCodeBarGraph"
+                                    elementId="{{'sub-area-hori-graph-element' + i}}" [filterType]="calenderType"
+                                    [graphTitle]="subArea['equipmentName']"></app-horizontal-stack-bar-graph>
+                            </div>
+                        </div>
+                        <div class="download">
+                            <button
+                                [ngClass]="[individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData'].length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                                <img src="assets/images/download.png" alt="Download">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngFor="let subArea of selectedSubAreaList; let i = index">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 m-bottom-15">
+                <div class="view-box">
+                    <div class="box-head">
+                        <p>{{subArea['equipmentName']}}</p>
+                    </div>
+                    <div class="box-body">
+                        <div *ngIf="individualGraphData['ht-pcc1-substation-1'].length > 0" id="{{'sub-area-graph-element' + i}}">
+                            <app-equipment-line-graph [StackData]="individualGraphData['ht-pcc1-substation-1']"
+                                [colorcode]="colorCodeLineGraph" *ngIf="calenderType == 'daily'" showBarGraph="false"
+                                [unit]="consumptionUnit" elementId="{{'sub-area-graph-element' + i}}" filterType="daily"
+                                [graphTitle]="subArea['equipmentName']"></app-equipment-line-graph>
+                            <app-equipment-bar-graph [StackData]="individualGraphData['ht-pcc1-substation-1']"
+                                [colorcode]="colorCodeBarGraph"
+                                *ngIf="calenderType == 'monthly' || calenderType == 'details'  || calenderType == 'yearly'"
+                                [unit]="consumptionUnit" elementId="{{'sub-area-graph-element' + i}}"
+                                [filterType]="calenderType" [graphTitle]="subArea['equipmentName']">
+                            </app-equipment-bar-graph>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <button
+                            [ngClass]="[individualGraphData['ht-pcc1-substation-1'].length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                            <img src="assets/images/download.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 m-bottom-15">
+                <div class="view-box">
+                    <div class="box-head">
+                        <p>{{subArea['equipmentName']}}</p>
+                        <div class="total-box">
+                            <p>Total : {{individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['total']}}
+                                {{consumptionUnit}}</p>
+                        </div>
+                        <span class="tooltiptext">{{subArea['equipmentName']}}</span>
+                    </div>
+                    <div class="box-body">
+                        <div class="piechart-container" id="{{'sub-area-hori-graph-element' + i}}">
+                            <app-horizontal-stack-bar-graph
+                                [StackData]="individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData']"
+                                showBarGraph="false" [unit]="consumptionUnit" [colorcode]="colorCodeBarGraph"
+                                elementId="{{'sub-area-hori-graph-element' + i}}" [filterType]="calenderType"
+                                [graphTitle]="subArea['equipmentName']"></app-horizontal-stack-bar-graph>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <button
+                            [ngClass]="[individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData'].length === 0 ? 'downloaddisabled' : 'downloadenabled']">
+                            <img src="assets/images/download.png" alt="Download">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 100px;"></div>
+</div>
+<!-- (click)="downloadFile(Total_Energy_Meter,filterType,TOTAL_UCL,mainAreaName,'')"> -->
+<!-- (click)="downloadFilePie(individualHorizontalGraphData['ht-pcc1-substation-1-piechart']['graphData'],filterType,mainAreaName,'')"> -->

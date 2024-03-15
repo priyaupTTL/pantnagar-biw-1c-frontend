@@ -1,0 +1,17 @@
+<div class="custom-header" [ngClass]="[theme === 'dark' ? 'custom-header-dark': theme === 'light' ? 'custom-header' : '']">
+    <div class="sec-1">
+        <div class="left-logo">
+            <img [src]="tataMotorsLogo" alt="tata-logo">
+        </div>
+    </div>
+    <div class="sec-2">
+        <div style="text-align: center;">
+            <p class="main-title">{{title}}</p>
+        </div>
+    </div>
+    <div class="sec-3">
+        <div class="right-logo">
+            <img [src]="sparqPlugLogo" alt="sparQplug-logo">
+        </div>
+    </div>
+</div>
