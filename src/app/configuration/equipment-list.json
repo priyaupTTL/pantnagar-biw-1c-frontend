@@ -110,47 +110,47 @@
             "subEquipments": [
                 {
                     "equipmentName": "Welding Controller, 180 W/C2",
-                    "equipmentId": "pp13.3-welding-controller-180-w-c2"
+                    "equipmentId": "pp-133-welding-controller-180-w-c2"
                 },
                 {
                     "equipmentName": "Welding Controller, 180 W/C4",
-                    "equipmentId": "pp13.3-welding-controller-180-w-c4"
+                    "equipmentId": "pp-133-welding-controller-180-w-c4"
                 },
                 {
                     "equipmentName": "Welding Controller, 160 W/C2",
-                    "equipmentId": "pp13.3-welding-controller-160-w-c2"
+                    "equipmentId": "pp-133-welding-controller-160-w-c2"
                 },
                 {
                     "equipmentName": "Welding Controller, 150 W/C2",
-                    "equipmentId": "pp13.3-welding-controller-150-w-c2"
+                    "equipmentId": "pp-133-welding-controller-150-w-c2"
                 },
                 {
                     "equipmentName": "Welding Controller, 150 W/C4",
-                    "equipmentId": "pp13.3-welding-controller-150-w-c4"
+                    "equipmentId": "pp-133-welding-controller-150-w-c4"
                 },
                 {
                     "equipmentName": "PLC-01",
-                    "equipmentId": "pp13.3-plc-01"
+                    "equipmentId": "pp-133-plc-01"
                 },
                 {
                     "equipmentName": "Welding Controller, 190 W/C2",
-                    "equipmentId": "pp13.3-welding-controller-190-w-c2"
+                    "equipmentId": "pp-133-welding-controller-190-w-c2"
                 },
                 {
                     "equipmentName": "Welding Controller, 190 W/C4",
-                    "equipmentId": "pp13.3-welding-controller-190-w-c4"
+                    "equipmentId": "pp-133-welding-controller-190-w-c4"
                 },
                 {
                     "equipmentName": "Welding Controller, 170 W/C4",
-                    "equipmentId": "pp13.3-welding-controller-170-w-c4"
+                    "equipmentId": "pp-133-welding-controller-170-w-c4"
                 },
                 {
                     "equipmentName": "Welding Controller, 170 W/C2",
-                    "equipmentId": "pp13.3-welding-controller-170-w-c2"
+                    "equipmentId": "pp-133-welding-controller-170-w-c2"
                 },
                 {
                     "equipmentName": "Welding Controller, 200 W/C2",
-                    "equipmentId": "pp13.3-welding-controller-200-w-c2"
+                    "equipmentId": "pp-133-welding-controller-200-w-c2"
                 }
             ]
         },
