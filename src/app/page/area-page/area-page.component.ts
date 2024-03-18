@@ -70,7 +70,7 @@ export class AreaPageComponent implements OnInit {
     this.individualGraphData = []
     this.individualHorizontalGraphData = []
     this.utilityService.callPostAPI('overview/meterwise/', this.tempObj).subscribe((res: any) => {
-      console.log('Res --> ', res);
+      // console.log('Res --> ', res);
 
       this.paretoGraphData = res.data.energyAreaConsumption;
       this.percentageGraphData = Object.entries(res.data.energyPercentageConsumption).map(([key,]) => {
@@ -86,7 +86,7 @@ export class AreaPageComponent implements OnInit {
             this.tempEqObj[key] = value
         }
       });
-      console.log('tempp --> ', this.tempEqObjHorbarGraph)
+      // console.log('tempp --> ', this.tempEqObjHorbarGraph)
 
       if (this.calenderType === 'daily') {
         Object.entries(this.tempEqObj).forEach(([key, value]: any) => {

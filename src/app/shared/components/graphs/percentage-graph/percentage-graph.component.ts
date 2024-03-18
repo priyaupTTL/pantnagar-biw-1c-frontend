@@ -63,7 +63,7 @@ export class PercentageGraphComponent implements OnInit {
 
   ngOnChanges(): void {
     this.renderGraph();
-    console.log('Stack Data--> ', this.StackData)
+    // console.log('Stack Data--> ', this.StackData)
   }
   renderGraph() {
     if (this.filterType == 'daily') {

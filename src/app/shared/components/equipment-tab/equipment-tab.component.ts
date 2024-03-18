@@ -53,7 +53,7 @@ export class EquipmentTabComponent implements OnInit {
     });
 
     this.store.pipe(select(getAppEqState)).subscribe((state: any) => {
-      console.log("The state -->",state)
+      // console.log("The state -->",state)
       this.blockSelected = state.selectedArea;
       this.subAreaSelected = state.selectedSubArea
       this.areaList = state.areaList

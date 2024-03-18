@@ -5,8 +5,8 @@
             "equipmentId": "incoming-pp13.1",
             "subEquipments": [
                 {
-                    "equipmentName": "O/G to 25 Kvar Capacitor",
-                    "equipmentId": "pp-131-og-to-25-kvar-capacitor"
+                    "equipmentName": "O/G to 25 Kvar Capacitor 1",
+                    "equipmentId": "pp-131-og-to-25-kvar-capacitor-1"
                 },
                 {
                     "equipmentName": "O/G to 25 Kvar Capacitor",

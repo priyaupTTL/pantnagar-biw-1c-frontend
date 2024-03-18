@@ -3,49 +3,8 @@ $semibold_font: Roboto-Medium;
 $bold_font: Roboto-Bold;
 $color: #293241;
 
-// .extraList {
-//     min-width: 180px;
-// }
-
-// .select_year {
-//     padding: 3px 27px;
-// }
-
-// .btn {
-//     cursor: pointer;
-// }
-//new start
-.cal_left {
-    display: flex;
-    align-items: center;
-}
 
 
-
-.date-selector img {
-    cursor: pointer;
-    width: 20px;
-    margin: 3px 0;
-}
-
-.date-selector img.data-details {
-    cursor: pointer;
-}
-
-.calender_dark {
-    // border: none !important;
-    margin: 1px -2px !important;
-    border: 1px solid #6483a1 !important;
-    border-radius: 0px !important;
-}
-
-.calender_dark input {
-    background: #26507a;
-    color: #fff;
-}
-.calender_dark img {
-    width: 9%;
-}
 
 
 .tree-meter-li,
@@ -62,31 +21,31 @@ $color: #293241;
 }
 
 
-.eq {
-    font-family: $medium_font;
-    font-size: 0.9vw;
-}
+// .eq {
+//     font-family: $medium_font;
+//     font-size: 0.9vw;
+// }
 
-.arrow {
-    height: 2px;
-    background-color: #4852e6;
-    width: 12%;
-    position: relative;
+// .arrow {
+//     height: 2px;
+//     background-color: #4852e6;
+//     width: 12%;
+//     position: relative;
 
-    &:after {
-        position: absolute;
-        content: " ";
-        display: inline-block;
-        right: -9px;
-        top: -5px;
-        width: 0;
-        height: 0;
-        border-top: 7px solid transparent;
-        border-bottom: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-left: 7px solid #4852e6;
-    }
-}
+//     &:after {
+//         position: absolute;
+//         content: " ";
+//         display: inline-block;
+//         right: -9px;
+//         top: -5px;
+//         width: 0;
+//         height: 0;
+//         border-top: 7px solid transparent;
+//         border-bottom: 7px solid transparent;
+//         border-right: 7px solid transparent;
+//         border-left: 7px solid #4852e6;
+//     }
+// }
 
 // .bg {
 //     background: white;
@@ -109,11 +68,7 @@ ul li {
 }
 
 .inner-conatiner {
-    // display: flex;
-    // margin: 10px 12px;
-    // justify-content: space-between;
-    // list-style: none;
-    // padding: 0;
+   
     display: grid;
     // grid-template-columns: repeat(6,1fr);
     grid-template-columns: repeat(17, 15rem);
@@ -175,16 +130,11 @@ ul li {
     border: none;
     cursor: pointer;
     background: #fff;
-    /* margin: 0px 4px 0px 20px; */
     border-radius: 8px;
-    /* min-width: 80px; */
-    /* height: 32px; */
     display: flex;
     flex-direction: column;
-    // width: 72px;
     max-width: 100%;
     width: 33%;
-    // height: 30px;
     font-weight: 600;
 }
 
@@ -315,16 +265,7 @@ ul li {
     }
 }
 
-//***************************** meter section **************************************************
 
-// .tree-section-meter {
-//     width: 92%;
-//     background: #bdb6e4;
-//     border-radius: 0px 5px 5px 0px;
-//     max-width: 100;
-//     height: auto;
-//     // overflow-x: scroll;
-// }
 
 .tree-section {
     width: 94%;
@@ -344,17 +285,17 @@ ul li {
     }
 }
 
-.tree-section-meter.tree-section-meter-dark ul li.tree-meter-li .inner-conatiner-meter .outer-cover-meter.active {
-    .sub-division-meter {
-        // background-color: rgb(55, 55, 145);
-        background: #26507a;
-        color: white;
-    }
+// .tree-section-meter.tree-section-meter-dark ul li.tree-meter-li .inner-conatiner-meter .outer-cover-meter.active {
+//     .sub-division-meter {
+//         // background-color: rgb(55, 55, 145);
+//         background: #26507a;
+//         color: white;
+//     }
 
-    .paint-process-div2-meter {
-        color: black;
-    }
-}
+//     .paint-process-div2-meter {
+//         color: black;
+//     }
+// }
 
 .tree-section.tree-section-dark ul li.tree-meter-li .inner-conatiner .outer-cover.active {
     .sub-division {
@@ -382,17 +323,17 @@ ul li {
     margin: 0 0 0.2rem 0;
 }
 
-.outer-cover-meter.active {
-    .sub-division-meter {
-        // background-color: rgb(55, 55, 145);
-        background-color: #4852e6;
-        color: white;
-    }
+// .outer-cover-meter.active {
+//     .sub-division-meter {
+//         // background-color: rgb(55, 55, 145);
+//         background-color: #4852e6;
+//         color: white;
+//     }
 
-    .paint-process-div2-meter {
-        color: black;
-    }
-}
+//     .paint-process-div2-meter {
+//         color: black;
+//     }
+// }
 
 .main-section-pted {
     padding: 5px 0 0 0;
@@ -469,10 +410,10 @@ ul li {
     background: #26507a;
 }
 
-.pted-center {
-    display: inline-flex;
-    justify-content: center;
-}
+// .pted-center {
+//     display: inline-flex;
+//     justify-content: center;
+// }
 
 // .pted-right {
 //     display: inline-flex;
@@ -509,14 +450,9 @@ ul li {
 
 .sub-area-pted {
     border-radius: 0.6vw 0vw 0vw 0.6vw;
-    // background: #bdb6e4;
     border-right: 3px solid white;
     max-width: 100%;
     cursor: pointer;
-    // &:hover {
-    //     background-color: #878de6;
-    //     color: white;
-    // }
     padding: 0 3px;
 }
 
@@ -577,31 +513,12 @@ ul li {
     width: 7px;
 }
 
-// .left-arrow1 {
-//     margin: 0 8px;
-//     // position: absolute;
-//     left: 0%;
-//     height: 100%;
-//     // display: none;
-//     background: none;
-//     font-weight: bolder;
-//     font-size: 22px;
-//     border: none;
-//     margin-top: 0px;
-// }
-
-// .left-arrow1 img {
-//     width: 7px;
-// }
 
 @media screen and (max-width: 1470px) {
     .left-arrow-mobile {
         display: block;
     }
 
-    // .mainNav{
-    //     min-width: 410px
-    // }
 }
 
 @media screen and (max-width: 760px) {
@@ -620,24 +537,7 @@ ul li {
     }
 }
 
-// *************************************** ht-pcc section **************************************************
-// .main-section-htpcc {
-//     margin-top: 0.4%;
-//     padding: 0 16px;
-// }
 
-// .tree-section-htpcc {
-//     width: calc(100% - 102px);
-// }
-
-// .sub-section-htpcc {
-//     display: flex;
-//     list-style: none;
-//     padding: 0;
-//     margin: 0;
-//     background: #bdb6e4;
-//     border-radius: 5px;
-// }
 
 .inner-conatiner-htpcc {
     display: flex;
@@ -673,16 +573,16 @@ ul li {
 }
 
 
-.section {
-    // border: 1px solid black;
-    margin-left: 0%;
-}
+// .section {
+//     // border: 1px solid black;
+//     margin-left: 0%;
+// }
 
 @media only screen and (min-width: 1989px) {
-    .section1 {
-        display: flex;
-        align-items: center;
-    }
+    // .section1 {
+    //     display: flex;
+    //     align-items: center;
+    // }
     .tree-section {
         width: 94.5%;
     }
@@ -690,9 +590,7 @@ ul li {
 
 //for 100%  display setting
 @media only screen and (min-width: 1589px) and (max-width: 1988px) {
-    .scroll {
-        height: 77vh;
-    }
+  
 
     .tree-section-meter {
         width: 95%;
@@ -924,20 +822,20 @@ ul li {
     margin-top: 5px;
 }
 
-.mat-input-element {
-    width: 165px !important;
-}
+// .mat-input-element {
+//     width: 165px !important;
+// }
 
-.date-format-selector {
-    display: flex;
-    margin-top: 5px;
-}
+// .date-format-selector {
+//     display: flex;
+//     margin-top: 5px;
+// }
 
 // for 150%
 @media only screen and (min-width: 1281px) and (max-width: 1429px) {
     .inner-conatiner {
         display: grid;
-        grid-template-columns: repeat(12, 13.5rem);
+        grid-template-columns: repeat(17, 13.5rem);
         margin-left: 1px;
     }
     .tree-section {
@@ -952,8 +850,8 @@ ul li {
     }
     .inner-conatiner {
         display: grid;
-        grid-template-columns: repeat(12, 13.3rem);
-        margin-left: 11px;
+        grid-template-columns: repeat(17, 13.3rem);
+        margin-left: 31px;
     }
     .pted {
         width: 211px;
@@ -982,19 +880,22 @@ ul li {
     }
     .inner-conatiner {
         display: grid;
-        grid-template-columns: repeat(12, 13.3rem);
-        margin-left: 5px;
+        grid-template-columns: repeat(17, 13.3rem);
+        margin-left: 31px;
     }
 }
 //for 125%  display setting
 @media only screen and (min-width: 1430px) and (max-width: 1588px) {
     .inner-conatiner {
         display: grid;
-        grid-template-columns: repeat(12, 14rem);
+        grid-template-columns: repeat(17, 14rem);
         // background-color: rgb(201, 59, 130);
     }
     .tree-section {
         width: 93%;
+    }
+    .pted{
+        width: 223px;
     }
 }
 //for 100%  display setting
@@ -1008,13 +909,6 @@ ul li {
         width: 89%;
     }
 
-    // .VehicleButton {
-    //     margin-top: 2%;
-    // }
-
-    // .energy {
-    //     display: none;
-    // }
 
     .right {
         display: none;
@@ -1023,31 +917,12 @@ ul li {
     .tree-section {
         width: 91%;
     }
-
-    // .calender-inpt {
-    //     margin: 2%;
-    // }
-
    
 }
 
 // for 150% display setting
 @media only screen and (min-width: 1201px) and (max-width: 1280px) {
-    // .main-container{
-    // // margin-top: 1.4% !important;
-    // background-color: pink;
-    // }
-    // .VehicleButton {
-    //     margin-top: 2% !important;
-    // }
-
-    // .inner_item .energy {
-    //     font-size: 1.2em;
-    // }
-
-    // .inner_item li {
-    //     margin: 0 4px;
-    // }
+ 
 
     .section1 img {
         width: 80%;
@@ -1062,32 +937,7 @@ ul li {
         display: none;
     }
 
-    // .selection label {
-    //     font-size: 1.1vw;
-    //     padding: 1%;
-    //     white-space: nowrap;
-    // }
 
-    // .selection {
-    //     margin: 3% 0% 0% 0%;
-    // }
-
-    // .datetime-selection {
-    //     display: flex;
-    //     align-items: center;
-    //     /* margin: 1%; */
-    //     justify-content: center;
-    // }
-
-    // .datetime-selection .btn {
-    //     /* font-size: 0.7em; */
-    //     padding: 11px 12px;
-    //     margin: 2px 2px;
-    // }
-
-    // .calender-inpt {
-    //     margin: 2%;
-    // }
 
     .calender-div {
         // margin-top: 3.4%;
@@ -1109,13 +959,9 @@ ul li {
 // for 150%
 @media only screen and (min-width: 1281px) and (max-width: 1429px) {
    
-
     .section1 p {
         margin-top: 3%;
     }
-
-    
-
     .total-consumption p.Energy {
         font-size: 1vw;
         line-height: 21px;
@@ -1142,11 +988,6 @@ ul li {
     .tree-section-meter {
         width: 90%;
     }
-
-    // .arrow-img {
-    //     width: 137%;
-    //     padding: 5px 8px;
-    // }
 
     .extraList {
         min-width: 162px;

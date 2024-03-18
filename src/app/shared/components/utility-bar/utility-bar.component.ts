@@ -145,7 +145,7 @@ export class UtilityBarComponent implements OnInit {
   }
 
   onSelectYear(value1: any, value2: any) {
-    console.log(value1, value2)
+    // console.log(value1, value2)
   }
 
 
@@ -161,6 +161,6 @@ export class UtilityBarComponent implements OnInit {
   }
 
   dateRangeChange(value1: any, value2: any) {
-    console.log(value1, value2)
+    // console.log(value1, value2)
   }
 }
